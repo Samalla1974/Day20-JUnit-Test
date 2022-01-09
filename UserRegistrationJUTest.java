@@ -64,5 +64,10 @@ public void givenPassword_WhenOneUpperCase_ShouldReturnTrue() {
 		boolean isValid = register.validatePassword("bAe7ge2@1");
 		Assert.assertTrue(isValid);
 	}
+@Test
+public void givenPassword_When_ShouldReturnFalse() {
+	boolean isValid = register.validatePassword("c81km0skd");
+	Assert.assertFalse(isValid);
+}
 }
 }
