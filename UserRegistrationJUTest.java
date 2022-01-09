@@ -55,5 +55,4 @@ public void givenPhoneNumber_When_ShouldReturnFalse() {
 	boolean isValid = register.validatePhoneNumber("34525");
 	Assert.assertFalse(isValid);
 }
-
 }
