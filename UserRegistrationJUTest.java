@@ -55,4 +55,9 @@ public void givenPhoneNumber_When_ShouldReturnFalse() {
 	boolean isValid = register.validatePhoneNumber("34525");
 	Assert.assertFalse(isValid);
 }
+@Test
+public void givenPassword_When_ShouldReturnTrue() {
+	boolean isValid = register.validatePassword("bAe7ge2@1");
+	Assert.assertTrue(isValid);
+}
 }
