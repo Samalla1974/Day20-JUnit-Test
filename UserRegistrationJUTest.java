@@ -59,5 +59,10 @@ public void givenPhoneNumber_When_ShouldReturnFalse() {
 public void givenPassword_When_ShouldReturnTrue() {
 	boolean isValid = register.validatePassword("bAe7ge2@1");
 	Assert.assertTrue(isValid);
+@Test
+public void givenPassword_WhenOneUpperCase_ShouldReturnTrue() {
+		boolean isValid = register.validatePassword("bAe7ge2@1");
+		Assert.assertTrue(isValid);
+	}
 }
 }
